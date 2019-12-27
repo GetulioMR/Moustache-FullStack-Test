@@ -1,0 +1,206 @@
+body {
+
+	& {
+		padding: 69px 0 0 0;
+	}
+
+	&.admin-bar {
+
+		.header {
+
+			& {
+				top: 32px;
+			}
+
+			@media (max-width: 782px) {
+				top: 46px;
+			}
+		}
+	}
+
+	&.js-menu {
+
+		.header {
+
+			&__navbar {
+
+				@media (max-width: 767px) {
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
+.header {
+	
+	& {
+		z-index: 2;
+		left: 0;
+		top: 0;
+		width: 100%;
+		position: fixed;
+		background: #353535;
+		padding: 10px 0;
+		border-bottom: 5px solid #434040;
+		border-top: 2px solid #434040;
+	}
+
+	&__logo {
+
+		& {
+			float: left;
+			margin: auto;
+			padding: 14px 0;
+		}
+
+		@media (max-width: 575px) {
+			padding: 8px 0 15px 0;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
+	&__button {
+		
+		& {
+			display: none;
+			float: right;
+			background: none;
+			border: 1px solid grey;
+			color: grey;
+		}
+
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&__navbar {
+
+		& {
+			float: left;
+		}
+
+		@media (max-width: 767px) {
+			position: fixed;
+			left: -100%;
+			top: calc(46px + 111px);
+			min-height: calc(100vh - 46px);
+			width: 30%;
+			background: #353535;
+			transition: .3s;
+		}
+
+		@media (max-width: 575px) {
+			width: 100%;
+		}
+
+		ul {
+
+			& {
+				margin: auto;
+				list-style: none;
+			}
+
+			@media (max-width: 767px) {
+				padding: 0;
+			}
+
+			li {
+
+				& {
+					display: inline-block;
+					margin: auto 15px auto auto;
+				}
+
+				@media (max-width: 767px) {
+					width: 100%;
+					padding: 10px 30px;
+					margin: auto;
+				}
+
+				&:first-child {
+
+					& {
+						background: #1f1f1f;
+					}
+
+					a {
+
+						& {							
+							display: none;
+							padding: 9px;
+							text-transform: uppercase;
+							color: white;
+							float: none;
+							text-align: center;
+							font-weight: bold;
+						}
+						
+						@media (max-width: 767px) {
+							display: block;
+						}
+					}
+				}
+
+				&:last-child {
+					margin: auto;
+				}
+
+				a {
+					
+					& {
+						text-decoration: none;
+						color: #999;
+						font-size: 16px;
+						display: block;
+						padding: 9px;
+						transition: .3s;
+					}
+
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	&__search {
+
+		& {
+			float: right;
+			padding: 5px 10px;
+    		background: #1f1f1f;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+
+		&__input {
+
+			& {				
+				color: white;
+				background: none;
+				font-size: 12px;
+				line-height: 30px;
+				border: none;
+			}
+
+			@media (max-width: 767px) {
+				width: calc(100% - 35px);
+			}
+		}
+
+		&__button {
+			background: none;
+			color: white;
+			font-size: 16px;
+			border: none;
+		}
+	}
+}

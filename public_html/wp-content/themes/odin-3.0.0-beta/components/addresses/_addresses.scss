@@ -1,0 +1,74 @@
+.addresses {
+
+	& {
+		overflow: hidden;
+		padding: 90px 0;
+	}
+
+	&__container {
+
+		&__item {
+
+			&:last-child {
+
+				@media (max-width: 991px) {
+					margin: auto;
+				}
+			}
+			
+			h2 {
+				
+				& {			
+					margin: auto auto 30px auto;
+					text-align: center;
+					font-size: 24px;
+					color: #322b2a;
+				}
+
+				@media (max-width: 767px) {
+					margin: 30px auto;
+				}
+			}
+
+			figure {
+
+				& {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				@media (max-width: 767px) {
+					display: block;
+				}
+
+				img {
+
+					& {				
+						display: block;
+						margin: auto;
+					}
+
+					@media (max-width: 767px) {
+						margin: auto auto 30px auto;
+					}
+				}
+
+				figcaption {
+
+					span {
+
+						& {
+							display: block;
+							max-width: 225px;
+						}
+
+						@media (max-width: 767px) {
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.form {
+
+	& {
+		overflow: hidden;
+	}
+
+	&__contact {
+
+		&__title {
+			text-align: center;
+			margin: auto auto 30px auto;
+			color: #322b2a;
+		}
+	}
+
+	.form-row {
+		margin-bottom: 15px;
+	}
+
+	input {
+
+		&[type=submit] {
+
+			& {				
+				border: 1px solid #5b5b5f;
+				background: none;
+				color: #5b5b5f;
+				width: 100%;
+				max-width: 300px;
+				padding: 10px;
+				font-weight: bold;
+				transition: .3s;
+				display: block;
+				margin: 15px auto auto auto;
+			}
+
+			&:hover {
+				color: white;
+				background: #5b5b5f;
+			}
+		}
+	}
+}

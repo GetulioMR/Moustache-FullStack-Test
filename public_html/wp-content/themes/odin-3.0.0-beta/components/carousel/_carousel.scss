@@ -1,0 +1,174 @@
+.carousel {
+
+	& {
+		overflow: hidden;
+		padding: 60px 0;
+	}
+
+	&__title {
+		text-align: center;
+		color: #322b2a;
+		font-size: 42px;
+		margin: auto auto 30px auto;
+	}
+
+	&__items {
+
+		& {			
+			display: flex;
+			padding: 0;
+			margin: auto;
+			justify-content: space-between;
+		}
+
+		@media (max-width: 767px) {
+			display: block;
+		}
+
+		&.owl-carousel {
+
+			& {
+				text-align: center;
+				width: 100%;
+				display: block;
+				position: relative;
+			}
+
+			.carousel__post {
+				width: 100%;
+			}
+
+			.owl-nav {
+
+				button {
+
+					& {
+						font-size: 30px;
+						position: absolute;
+						border: 1px solid grey;
+						border-radius: 0;
+						line-height: 100%;
+						padding: 0 15px 8px 14px !important;
+					}
+
+					&.owl-prev {
+						left: 0;
+					}
+
+					&.owl-next {
+						right: 0;
+					}
+				}
+			}
+
+			.owl-dots {
+
+				& {
+					margin: 30px auto;
+				}
+
+				.owl-dot {
+
+					span {
+
+						& {							
+							width: 30px;
+							border-radius: 0;
+						}
+
+						@media (max-width: 575px) {
+							width: 10px;
+							height: 10px;
+							border-radius: 0;
+							margin: -17px 5px auto 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__post {
+
+		& {
+			width: 32%;
+			display: inline-block;
+			list-style: none;
+			position: relative;
+			border: 1px solid grey;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+			margin: auto auto 30px auto;
+		}
+
+		&__category {
+			
+			& {
+				position: absolute;
+				background: #221e40;
+				top: 15px;
+				left: 15px;
+				padding: 5px 10px;
+				color: white;
+				font-size: 12px;
+				text-decoration: none;
+				transition: .3s;
+			}
+
+			&:hover {
+				background: #b0a084;
+			}
+		}
+
+		&__image {
+
+			& {
+				margin: auto;
+			}
+			
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+			}
+		}
+
+		&__content {
+			
+			& {
+				display: block;
+				padding: 30px;
+				text-decoration: none;
+				color: #322b2a;
+			}
+
+			&:hover {
+
+				& {
+					text-decoration: none;
+					color: #322b2a;
+				}
+
+				button {
+					color: white;
+					background: #5b5b5f;
+				}
+			}
+
+			button {
+
+				& {
+					border: 1px solid #5b5b5f;
+					background: none;
+					color: #5b5b5f;
+					width: 100%;
+					padding: 10px;
+					font-weight: bold;
+					transition: .3s;
+				}
+			}
+		}
+	}
+}

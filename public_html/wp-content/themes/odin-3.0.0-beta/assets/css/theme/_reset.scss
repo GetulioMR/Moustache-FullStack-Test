@@ -1,0 +1,17 @@
+.container {
+	
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+#wpadminbar {
+
+	@media (max-width: 782px) {
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+}

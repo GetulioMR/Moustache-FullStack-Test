@@ -1,0 +1,71 @@
+.body {
+
+	&.admin-bar {
+		
+		.banner {
+			min-height: calc(100vh - 69px - 32px);
+		}
+	}
+}
+
+.banner {
+	
+	& {
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: calc(100vh - 69px);
+		background: black url('../img/banner.jpg') no-repeat center center / cover fixed;
+	}
+
+	&__text {
+		
+		& {
+			color: white;
+			text-align: center;
+			font-size: 60px;
+			margin: auto;
+			line-height: 100%;
+			font-family: 'Bebas Neue';
+			font-style: italic;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 7vw;
+		}
+
+		span {
+
+			& {
+				display: block;
+			}
+
+			&:first-child {
+				text-indent: -90px;
+			}
+
+			&:last-child {
+				text-indent: 90px;
+			}
+
+			em {
+
+				& {
+					display: inline;
+					position: relative;
+				}
+
+				&:after {
+					content: '';
+					border-bottom: 4px solid white;
+					display: block;
+					position: absolute;
+					top: calc(50% - 4px);
+					left: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
