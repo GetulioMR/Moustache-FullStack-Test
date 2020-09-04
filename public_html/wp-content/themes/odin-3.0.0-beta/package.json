@@ -54,7 +54,7 @@
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
     "node-fs": "^0.1.7",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.13.1",
     "node-wp-i18n": "^1.1.1",
     "owl.carousel": "^2.3.4"
   },
